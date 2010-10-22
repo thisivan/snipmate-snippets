@@ -1,6 +1,6 @@
 function ${1:Name} (${2:argument}) {
 	if (!(this instanceof arguments.callee)) {
-		trow new Error('Constructor functions can only be executed using the \'new\' operator.');
+		throw new Error('Constructor functions can only be executed using the \'new\' operator.');
 	}
 
 	${3:// TODO: code}
